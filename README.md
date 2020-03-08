@@ -7,8 +7,24 @@
 |nickname|string|null: false|
 ### Asociation
 - has_many :messages
+- has_many :group
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|text|bull :false 
+|body|text|null :false|
+|image|string|
+|user_id|string|null: false, foreign_key: true|
+### Asociation
+- belongs_to :users
+- has_many :group
+
+## groupテーブル
+|Column|Type|Options|
+|------|----|-------|
+|groupname|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|message_id|integer|null: false, foreign_key: true|
+### Asociation
+- has_many :users
+- has_,any :messages
