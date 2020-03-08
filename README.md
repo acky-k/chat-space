@@ -28,3 +28,13 @@
 ### Asociation
 - has_many :users
 - has_,any :messages
+
+## group_messegesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|message_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+### Asociation
+- belongs_to :message
+- belongs_to :group
+
