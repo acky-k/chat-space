@@ -19,7 +19,7 @@
 - belongs_to :users
 - has_many :group
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |groupname|string|null: false|
@@ -29,12 +29,12 @@
 - has_many :users
 - has_,any :messages
 
-## group_messegesテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Asociation
-- belongs_to :message
+- belongs_to :user
 - belongs_to :group
 
