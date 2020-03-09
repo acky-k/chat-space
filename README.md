@@ -19,7 +19,7 @@
 |group_id|string|null: false, foreign_key: true|
 ### Asociation
 - belongs_to :users
-- has_many :group
+- belongs_to :group
 
 ## groupsテーブル
 |Column|Type|Options|
