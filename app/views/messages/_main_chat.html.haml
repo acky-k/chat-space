@@ -1,1 +1,53 @@
-<チャット画面>
+.chat-main
+  
+   .main-header
+
+      .main-header__group
+         test
+
+      .main-header__edit
+         = link_to "Edit", "#", class:"edit" 
+
+   .main-messages
+      
+      .message
+
+         .message-box
+
+            .message-box__name
+               name
+      
+            .message-box__date
+               2020/03/14(Sat) 11:00:00
+
+         .message-post
+            おはよう
+
+      .message
+
+         .message-box
+
+            .message-box__name
+               name
+      
+            .message-box__date
+               2020/03/14(Sat) 11:00:00
+
+         .message-post
+            おはよう
+         
+
+   .main-form
+      
+      .form-new
+
+         %form.form-new__message
+            .input-box
+               %input.input-box__text{placeholder: "type a message", type: "text"}/
+               %label.input-box__pictur{type: "file"}
+                  = icon('fas', 'image')
+                  %input.input-box__file{type: "file"}
+
+               .submit-btn
+                  .send
+                     Send
