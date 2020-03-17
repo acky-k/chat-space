@@ -1,53 +1,53 @@
 .chat-main
   
-   .main-header
+   .chat-main__header
 
-      .main-header__group
+      .chat-main__header-group
          test
 
-      .main-header__edit
+      .chat-main__header-edit
          = link_to "Edit", "#", class:"edit" 
 
-   .main-messages
+   .chat-main__messages
       
-      .message
+      .chat-main__messages-post
 
-         .message-box
+         .chat-main__messages-post-box
 
-            .message-box__name
+            .chat-main__messages-post-box-name
                name
       
-            .message-box__date
+            .chat-main__messages-post-box-date
                2020/03/14(Sat) 11:00:00
 
-         .message-post
+         .chat-main__messages-text
             おはよう
+      
+      .chat-main__messages-post
 
-      .message
+         .chat-main__messages-post-box
 
-         .message-box
-
-            .message-box__name
+            .chat-main__messages-post-box-name
                name
       
-            .message-box__date
+            .chat-main__messages-post-box-date
                2020/03/14(Sat) 11:00:00
 
-         .message-post
-            おはよう
-         
+         .chat-main__messages-text
+            こんにちは
+      
 
    .main-form
       
-      .form-new
+      .main-form__new
 
-         %form.form-new__message
-            .input-box
+         %form.main-form__new-message
+            .main-form__new-message-input
                %input.input-box__text{placeholder: "type a message", type: "text"}/
                %label.input-box__pictur{type: "file"}
                   = icon('fas', 'image')
                   %input.input-box__file{type: "file"}
 
-               .submit-btn
+               .main-form__new-message-submit-btn
                   .send
                      Send
