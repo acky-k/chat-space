@@ -4,10 +4,10 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|nickname|string|null: false|
+|name|string|null: false|
 ### Asociation
 - has_many :messages
-- has_many :groups, through: :groups_users
+- has_many :groups, through: :group_users
 - has_many :groups_users
 
 ## messagesテーブル
@@ -24,13 +24,13 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|group|string|null: false|
 ### Asociation
 - has_many :messages
-- has_many :users, through: :groups_users 
+- has_many :users, through: :group_users 
 - has_many :groups_users
 
-## groups_usersテーブル
+## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|

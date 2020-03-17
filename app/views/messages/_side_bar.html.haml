@@ -10,42 +10,17 @@
       %ul.chat-side__header-box-menu 
    
         %li.chat-side__header-box-edit-icon
-          = link_to "#", class: "contents__btn" do
+          = link_to new_group_path do
             = icon('far', 'edit')
         %li.chat-side__header-box-gear-icon
           = link_to edit_user_path(current_user)  do
             = icon('fas', 'cog', class: 'icon')
 
   .groups
-
-    .groups-group
-
-      %p.groups-group__name
-        test-group
-
-      %p.groups-group__message
-        まだメッセージはありません
-
-    .groups-group
-
-      %p.groups-group__name
-        test-group
-
-      %p.groups-group__message
-        まだメッセージはありません
-
-    .groups-group
-
-      %p.groups-group__name
-        test-group
-
-      %p.groups-group__message
-        まだメッセージはありません
-
-    .groups-group
-
-      %p.groups-group__name
-        test-group
-
-      %p.groups-group__message
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .groups__group
+        = link_to "#" do
+          .groups__group-name
+            = group.name
+          .groups__group-message
+            まだメッセージはありません

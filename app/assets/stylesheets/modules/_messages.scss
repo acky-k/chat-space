@@ -62,20 +62,20 @@
   padding: 20px;
 
 
-  &-group {
-    color: #ffffff;
+  &__group {
+    
     font-weight: bold;
-  
 
-
-    &__name {
+    &-name {
       font-size: 15px;
-      padding-bottom: 5px;  
+      padding-bottom: 5px;
+      color: #ffffff;  
     }
 
-    &__message {
+    &-message {
       font-size: 11px;
       padding-bottom: 40px;
+      color: #ffffff;
     }
    }
   }
