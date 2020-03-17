@@ -1,1 +1,51 @@
-<サイドバー>
+.chat-side
+  
+  .chat-side__header
+    
+    .chat-side__header-box
+      
+      %p.chat-side__header-box-user
+        name
+      
+      %ul.chat-side__header-box-menu 
+
+        %li.chat-side__header-box-edit-icon
+          = link_to "#", class: "contents__btn" do
+            = icon('far', 'edit')
+        %li.chat-side__header-box-gear-icon
+          = link_to "#", class: "contents__btn" do
+            = icon('fas', 'cog')
+
+  .groups
+
+    .groups-group
+
+      %p.groups-group__name
+        test-group
+
+      %p.groups-group__message
+        まだメッセージはありません
+
+    .groups-group
+
+      %p.groups-group__name
+        test-group
+
+      %p.groups-group__message
+        まだメッセージはありません
+
+    .groups-group
+
+      %p.groups-group__name
+        test-group
+
+      %p.groups-group__message
+        まだメッセージはありません
+
+    .groups-group
+
+      %p.groups-group__name
+        test-group
+
+      %p.groups-group__message
+        まだメッセージはありません
