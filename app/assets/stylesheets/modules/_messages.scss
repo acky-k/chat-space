@@ -99,6 +99,14 @@
       color: #333333;
       font-size: 20px;
       padding-top: 35px;
+      position: relative;
+      width: 100vw;
+        .member {
+          color: #999999;
+          font-size: 16px;
+          bottom: 0;
+          position: absolute;
+  }
 }
 
      &-edit {
