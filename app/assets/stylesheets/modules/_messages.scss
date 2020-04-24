@@ -153,14 +153,18 @@
    }
   }
 
-    &-text {
-      font-size: 14px;
-      padding-top: 12px;
-      color: #434a54;
+      &-text {
+       font-size: 14px;
+       padding-top: 12px;
+       color: #434a54;    
+      
+        &-content {
+
+        
    }
   }
  }
-
+}
          
 .main-form {
   height: 90px;

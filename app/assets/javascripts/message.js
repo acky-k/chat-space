@@ -1,6 +1,6 @@
 $(function(){
   function buildHTML(message){
-    if ( message.image ) {
+    if (message.image) {
       var html =
        `<div class="chat-main__messages-post" date-message-id=${message.id}>
           <div class="chat-main__messages-post-box">
@@ -78,7 +78,7 @@ $(function(){
        insertHTML += buildHTML(message)
       })
       $('.chat-main__messages').append(insertHTML);
-      $('.chat-main__messages-post').animate({ scrollTop: $('.chat-main__messages-post')[0].scrollHeight});
+      $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
      }
     })
     .fail(function() {
