@@ -10,6 +10,7 @@
   width: 300px;
   color: white;
   float: left;
+  
 
 
   &__header {
@@ -60,11 +61,12 @@
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 20px;
+  
 
 
   &__group {
-    
     font-weight: bold;
+    text-decoration: none;
 
     &-name {
       font-size: 15px;
